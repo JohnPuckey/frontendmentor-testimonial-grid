@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+// variables
+
+// Typography
+
+$myfont: 'Barlow Semi Condensed', sans-serif;
+$myFontSize: 13px;
+
+// colors
+
+$primaryColor1: hsl(263, 55%, 53%);
+$primaryColor2: hsl(217, 19%, 35%);
+$primaryColor3: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+$neutralColor1: hsl(0, 0%, 81%);
+$neutralColor2: hsl(210, 46%, 95%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $neutralColor2;
+    font-family: $myfont;
+    font-size: $myFontSize;
+}
+
+// grid
+
+.testimonials {
+    margin: 70px 24px;
+
+    .test-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+}
+
+// testimonial items
+
+.test-item {
+    background-color: $white;
+    color: $primaryColor2;
+    padding: 24px 32px;
+    border-radius: 8px;
+    position: relative;
+
+    .test-name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        .avatar {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            border: 2px solid $white;
+        }
+
+        .test-name-text {
+            margin-left: 15px;
+            font-size: 10px;
+
+            .verified {
+                opacity: 50%;
+            }
+        }
+
+    }
+
+    .review {
+        margin-bottom: 20px;
+    }
+
+    .quote {
+        opacity: 50%;
+    }
+}

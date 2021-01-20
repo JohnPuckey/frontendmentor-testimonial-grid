@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+.testimonials {
+  margin: 70px 24px;
+}
+
+.testimonials .test-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.test-item {
+  background-color: white;
+  color: #48556a;
+  padding: 24px 32px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.test-item .test-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.test-item .test-name .avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+}
+
+.test-item .test-name .test-name-text {
+  margin-left: 15px;
+  font-size: 10px;
+}
+
+.test-item .test-name .test-name-text .verified {
+  opacity: 50%;
+}
+
+.test-item .review {
+  margin-bottom: 20px;
+}
+
+.test-item .quote {
+  opacity: 50%;
+}
+/*# sourceMappingURL=style.css.map */
